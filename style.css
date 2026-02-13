@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("bck-grnd rose.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.val-cont{
+    width: 100%;
+    min-height: 100vh;
+   /* background:linear-gradient(144deg, #ff90a2cb, #ff617be1);*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.val-bx1{
+ width: 100%;
+ max-width: 600px;
+ min-height: auto;
+ text-align: center;
+ padding: 40px 20px;
+ position: relative;
+ border: 2px solid #e64848;
+ backdrop-filter: blur(80px);
+ border-radius: 10px;
+ margin: auto;
+}
+.val-bx1 h2{
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+    color: #e7193b;
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+}
+.val-bx1 p{
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+.will{
+    font-family: "Playwrite NO", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+    margin-top: 30px;
+    color: #d80d0d;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    
+}
+button{
+    width: auto;
+    min-width: 100px;
+    height: 40px;
+    padding: 10px 20px;
+    margin: 15px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e64848;
+    color: #fff;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+button:hover{
+  background-color: red;
+  cursor: pointer;
+  transition: 1.4s ease-out;
+}
+.val-bx2{
+    display: none;
+    width: 100%;
+    max-width: 700px;
+    min-height: auto;
+    padding: 30px 20px;
+    position: relative;
+    line-height: 1.8;
+    margin: auto;
+}
+.said{
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    font-weight: bold;
+    color: #e64848;
+  font-family: "Playwrite NO", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-bottom: 15px;
+}
+.text-cont{
+
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+    border:2px solid #ff8c8c;
+    padding: 20px;
+    border-radius: 4px;
+    backdrop-filter: blur(80px);
+    color: #e7e7e7;
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
+    line-height: 1.6;
+}
+.text-cont h3{
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    margin-bottom: 10px;
+}
+.shot{
+    font-size: clamp(1rem, 3.5vw, 1.4rem);
+    color: rgb(170, 0, 0);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+}
+
+.val-bx3{
+
+    width: 100%;
+    max-width: 600px;
+    min-height: auto;
+    padding: 40px 20px;
+    position: relative;
+    line-height: 1.8;
+    color: #e64848;
+    display: none;
+    margin: auto;
+    text-align: center;
+
+   font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+   
+}
+.val-bx3 p{
+    font-size: clamp(1.3rem, 5vw, 2rem);
+    font-weight: bold;
+    margin: 10px;
+}
+.val-bx3 h3{
+    font-size: clamp(1rem, 3.5vw, 1.5rem);
+}
+.love{
+      font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+    color: #411018b2;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    margin-top: 15px;
+    text-align: center;
+}
+
+.val-bx2.show{
+    display: block;
+}
+.val-bx1.none{
+    display: none;
+}
+.val-bx3.print{
+    display: block;
+}
+
+/* Media Queries for Enhanced Responsiveness */
+
+/* Mobile devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    .val-cont{
+        padding: 15px;
+    }
+    
+    .val-bx1{
+        padding: 30px 15px;
+    }
+    
+    .val-bx2{
+        padding: 25px 15px;
+    }
+    
+    .val-bx3{
+        padding: 30px 15px;
+    }
+    
+    button{
+        margin: 10px 5px;
+        min-width: 90px;
+        font-size: 0.9rem;
+    }
+    
+    .text-cont{
+        padding: 15px;
+    }
+    
+    .will{
+        margin-top: 20px;
+    }
+}
+
+/* Small tablets (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .val-bx1, .val-bx2, .val-bx3{
+        padding: 35px 20px;
+    }
+    
+    button{
+        margin: 12px 8px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .val-cont{
+        padding: 30px;
+    }
+    
+    .val-bx1{
+        padding: 50px 30px;
+    }
+    
+    .val-bx2{
+        padding: 40px 30px;
+    }
+    
+    .val-bx3{
+        padding: 50px 30px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .val-cont{
+        padding: 40px;
+    }
+    
+    .val-bx1{
+        padding: 60px 40px;
+    }
+    
+    .val-bx2{
+        padding: 50px 40px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .val-bx1{
+        max-width: 700px;
+    }
+    
+    .val-bx2{
+        max-width: 800px;
+    }
+    
+    .val-bx3{
+        max-width: 700px;
+    }
+}
